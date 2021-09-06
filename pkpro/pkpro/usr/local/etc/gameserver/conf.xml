@@ -1,0 +1,21 @@
+<Config>
+    <Host name="a">
+        <UserId>$PKID</UserId>
+        <PlaykeyApi>http://api.playkey.net/</PlaykeyApi>
+        <RemoteHost>52.136.241.61</RemoteHost>
+        <RemotePort>13001</RemotePort>
+        <AdapterName>NVIDIA GeForce GTX 1080 Ti</AdapterName>
+        <SystemSnapshot>data/kvm/desktop/win-q4@</SystemSnapshot>
+        <TemplateFile lock="true">/usr/local/etc/gameserver/template.xml</TemplateFile>
+        <FilebeatConfig>/usr/local/share/GameServer/logstash/filebeat.yml</FilebeatConfig>
+        <LogstashAddress>elk.playkey.net:12122</LogstashAddress>
+        <VmAutoconf>
+            <Minimal>
+                <Memory unit="GiB">16</Memory>
+                <Cpu>8</Cpu>
+            </Minimal>
+            <Memory unit="GiB">16</Memory>
+            <Cpu>8</Cpu>
+        </VmAutoconf>
+    </Host>
+</Config>

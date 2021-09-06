@@ -1,0 +1,9 @@
+[Unit]
+Description=Run once
+After=getty.target
+
+[Service]
+ExecStart=/root/runonce.sh
+StandardOutput=journal+console
+[Install]
+WantedBy=multi-user.target
