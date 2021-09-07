@@ -1,0 +1,3 @@
+*.iso
+iso/*
+!ks-pk-pro.cfg
